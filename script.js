@@ -32,20 +32,3 @@ ul.addEventListener("click",function(event){
   }
 });
 
-// for (b of but2){
-//   b.addEventListener("click",function(){
-//     let p=this.parentElement;
-//     p.remove();
-//     console.log(p);
-   
-// });
-// };
-
-
-
-// inp.addEventListener("input",function(){
-//     console.log(inp.value);
-//     li.append(inp.value);
-//     // li.innerText=inp.value;
-    
-// });
