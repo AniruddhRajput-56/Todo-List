@@ -1,6 +1,6 @@
 # To-Do List Web App
 
-A simple To-Do List web application built with HTML, CSS, and JavaScript.  
+A simple **To-Do List** web application built with **HTML, CSS, and JavaScript**.  
 Add tasks, view them in a list, and delete tasks when completed.
 
 ---
