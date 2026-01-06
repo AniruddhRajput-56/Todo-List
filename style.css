@@ -1,0 +1,117 @@
+/* body{
+    text-align: center;
+}
+
+div{
+     height: 400px;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+    border: 2px solid black;
+   
+}
+
+input{
+    margin:5px;
+} */
+
+/* Animated background */
+body {
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc, #00c6ff);
+    background-size: 600% 600%;
+    animation: bgMove 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Card */
+.container {
+    height: 420px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    padding: 15px;
+}
+
+/* Input */
+input {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+/* Add Task Button */
+.add-btn {
+    margin: 8px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* animation: pulse 2s infinite; */
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(221,36,118,0.6); }
+    70% { box-shadow: 0 0 0 15px rgba(221,36,118,0); }
+    100% { box-shadow: 0 0 0 0 rgba(221,36,118,0); }
+}
+
+.add-btn:hover {
+    transform: scale(1.08);
+}
+
+/* List */
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 6px;
+    padding: 6px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Delete button */
+.del {
+    background: crimson;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.del:hover {
+    background: rgb(114, 13, 13);
+    transform: scale(1.1);
+}
